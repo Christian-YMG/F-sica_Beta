@@ -1,0 +1,87 @@
+.header{
+    display: block;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7);/* #34495e;*/
+    padding: 0 10px;
+    color: #fff;
+    z-index: 100;
+    /* backdrop-filter: blur(5px);  */
+    position: sticky;
+    top: 0px;
+  }
+  
+  .logo{
+    line-height: 100px; /* el alto del header mide 100 px entonces la palabara calculadora estara en medio de esos 100 px*/
+    float: left; /*Estara recargado a la izquierda*/
+    margin-left: 5%; /*tendra 5% de margen a la izquierda*/
+    text-transform: uppercase;
+  }
+  
+  .menu{
+    float: right; 
+    line-height: 100px;
+  }
+  .menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0px 20px; /*0px hasta que llegue a la letra 20px espacio entre palabra*/
+    transition: 0.4s; /*el a:hover tarda ese tiempo en actuar*/
+  }
+  .show-menu-btn,.hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /*se oculta lo que esta en esa clase*/
+  }
+  .show-menu-btn{
+    float: right;
+    padding: 0 20px; /*a 20px de margen con el borde derecho*/
+  }
+  .show-menu-btn i{
+    line-height: 100px; 
+  }
+  .menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover{
+    color: #3498db;
+  }
+  
+  #chk{
+    position: absolute;
+    visibility: hidden; /*ocultar el chk*/
+    z-index: 100;
+  }
+  
+  @media screen and (max-width:800px) { /*es un if*/
+    .show-menu-btn,.hide-menu-btn{
+      display: block; /*se muestra*/
+    }
+    .menu{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background:rgba(0, 0, 0, 0.8);
+      right: -100%; /*se desplazara -100 desde la derech*/
+      top: 0px;
+      text-align: center;
+      padding: 100px 0px;
+      line-height: 100px;
+      transition: 0.7s; /*se desplazara en ese tiempo*/
+    }
+    .menu a{
+      display: block; /*se muestran las palabras del menu*/
+      padding: 30px; /*espacio de 30px entre el contenido de los a*/
+    }
+    .hide-menu-btn{
+      position: absolute; /*el icono del boton no se movera*/
+      top: 30px;
+      right: 40px;
+    }
+    #chk:checked ~ .menu{ /*si el chk es igual a click el menu tendra esos cambios*/
+      right: 0px;
+    }
+  }
+  /* footer {
+    height: 1000px;
+  } */
