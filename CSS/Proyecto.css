@@ -7,25 +7,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-
-
-.banner{
-    width: 100%;
-    height: 420px;
-    background-color: rgb(56, 241, 102);
-    
-}
-
-.img_banner{
-    display: block; /*Para que actue como una caja*/
-    margin: auto;
-    width: 100%;
-    height: 420px;
-    max-width: 1080px;
-    min-width: 500px;
-}
-
-
 .title{
     display: block;
     text-align: center;
@@ -48,7 +29,7 @@
     justify-content: center; /*Alinear al centro*/
     margin: auto;
     margin-top: 20px;
-    z-index: -1;
+    z-index: 1;
     position: absolute;
 }
 
@@ -100,26 +81,31 @@
 
 .tabla{
     display: none;
-    margin: auto;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 table{
     border-collapse: collapse;
+    width: 80%;
     margin: auto;
 }
 
 thead{
-    border-bottom: solid 5px white;
+    border-bottom: solid 10px white;
 }
 
 td{
-    background-color: rgb(255, 123, 0);
-    color: #000000;
+    background-color: #3498db;
+    color: #ffff;
     font-weight: 600;
 }
 
-table th{
-    background-color: #3498db;
+th{
+    background-color: #434343;
     color: #ffff;
 }
 
@@ -129,9 +115,9 @@ th, td{
 }
 
 th:hover{
-    background-color: #ffff;
+    background-color: #7aaab1;
     cursor: pointer;
-    color: #3498db;
+    color: #ffff;
     transition: .5s;
 }
 
@@ -140,26 +126,27 @@ tbody tr:nth-child(even){
 }
 
 td:hover{
-    background-color: #434343;
+    background-color: #adadad;
     cursor: pointer;
     color: #ffff;
     transition: .5s;
 }
 
 .btnTable{
-    width: 100px;
+    width: 150px;
     height: 30px;
     margin-top: 30px;
     margin-left: 45%;
     color: rgb(255, 255, 255);
     background-color: rgb(235, 118, 8);
+    border: none;
     border-radius: 10px;
     cursor: pointer;
     font-size: 15px;
 }
 
 .btnTable:hover{
-    width: 101px;
+    width: 151px;
     height: 31px;
     background-color: rgb(255, 255, 255);
     color: rgb(235, 118, 8);

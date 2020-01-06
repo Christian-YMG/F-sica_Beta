@@ -1,6 +1,11 @@
 
+/* .divbtn1{
+    width: 100%;
+    display: block;
+} */
+
 .btn1{
-    top: 0;
+    margin: auto;
     width: 150px;
     height: 30px;
     position: absolute;
@@ -33,6 +38,7 @@
     font-size: 15px;
     cursor: pointer;
     margin-left: 10px;
+    z-index: 100px;
     
 }
 
@@ -47,9 +53,7 @@
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
 }
 
-.descripcion1,
-.descripcion2,
-.descripcion3{
+.descripcion1{
     width: 100%;
     /* max-width: 1150px; ancho del container *//*No se utiliza*/ 
     height: 600px;
@@ -62,6 +66,46 @@
     position: absolute;
   }
 
+  .descripcion2{
+    width: 100%;
+    /* max-width: 1150px; ancho del container *//*No se utiliza*/ 
+    height: 600px;
+    display: flex; /*Alterar dimensiones para llenar espacios*/
+    flex-wrap: wrap; /*para apilar el contenido uno debajo del otro*/
+    justify-content: center; /*Alinear al centro*/
+    margin: auto;
+    margin-top: 0px;
+    z-index: -4;
+    position: absolute;
+  }
+
+  .descripcion3{
+    width: 100%;
+    /* max-width: 1150px; ancho del container *//*No se utiliza*/ 
+    height: 600px;
+    display: flex; /*Alterar dimensiones para llenar espacios*/
+    flex-wrap: wrap; /*para apilar el contenido uno debajo del otro*/
+    justify-content: center; /*Alinear al centro*/
+    margin: auto;
+    margin-top: 0px;
+    z-index: -6;
+    position: absolute;
+  }
+
+  .descripcion4{
+    width: 100%;
+    /* max-width: 1150px; ancho del container *//*No se utiliza*/ 
+    height: 600px;
+    display: flex; /*Alterar dimensiones para llenar espacios*/
+    flex-wrap: wrap; /*para apilar el contenido uno debajo del otro*/
+    justify-content: center; /*Alinear al centro*/
+    margin: auto;
+    margin-top: 0px;
+    z-index: -7;
+    position: absolute;
+  }
+
+
 .colocarRutina1{
     width: 100%;
     /* max-width: 1150px; ancho del container *//*No se utiliza*/ 
@@ -71,7 +115,7 @@
     justify-content: center; /*Alinear al centro*/
     margin: auto;
     margin-top: 0px;
-    z-index: -2;
+    z-index: -8;
     position: absolute;
 }
 .colocarRutina2{
@@ -83,7 +127,7 @@
     justify-content: center; /*Alinear al centro*/
     margin: auto;
     margin-top: 0px;
-    z-index: -4;
+    z-index: -10;
     position: absolute;
 }
 
@@ -96,16 +140,31 @@
     justify-content: center; /*Alinear al centro*/
     margin: auto;
     margin-top: 0px;
-    z-index: -6;
+    z-index: -12;
+    position: absolute;
+}
+
+.colocarRutina4{
+    width: 100%;
+    /* max-width: 1150px; ancho del container *//*No se utiliza*/ 
+    height: 600px;
+    display: flex; /*Alterar dimensiones para llenar espacios*/
+    flex-wrap: wrap; /*para apilar el contenido uno debajo del otro*/
+    justify-content: center; /*Alinear al centro*/
+    margin: auto;
+    margin-top: 0px;
+    z-index: -14;
     position: absolute;
 }
 
   .descripcion1 .carta1, 
   .descripcion2 .carta1,
-  .descripcion3 .carta1,  
+  .descripcion3 .carta1,
+  .descripcion4 .carta1,   
   .colocarRutina1 .carta,
   .colocarRutina2 .carta,
-  .colocarRutina3 .carta{
+  .colocarRutina3 .carta,
+  .colocarRutina4 .carta{
     width: 330px;
     height: 650px;
     border-radius: 8px;
@@ -127,10 +186,12 @@
 
 .descripcion1 .carta1 img, 
 .descripcion2 .carta1 img,
-.descripcion3 .carta1 img,  
+.descripcion3 .carta1 img,
+.descripcion4 .carta1 img,  
 .colocarRutina1 .carta img,
 .colocarRutina2 .carta img,
-.colocarRutina3 .carta img{
+.colocarRutina3 .carta img,
+.colocarRutina4 .carta img{
     width: 330px;
     height: 330px;
 }
@@ -139,37 +200,43 @@
 .descripcion1 .carta1 h4, 
 .descripcion2 .carta1 h4,
 .descripcion3 .carta1 h4,
+.descripcion4 .carta1 h4,
 .colocarRutina1 .carta h4,
 .colocarRutina2 .carta h4,
-.colocarRutina3 .carta h4{
+.colocarRutina3 .carta h4,
+.colocarRutina4 .carta h4{
     font-weight: 600; /*El titulo y grosor de la letra*/
 }
 
 .descripcion1 .carta1 p, 
 .descripcion2 .carta1 p,
-.descripcion3 .carta1 p, 
+.descripcion3 .carta1 p,
+.descripcion4 .carta1 p,  
 .colocarRutina1 .carta p,
 .colocarRutina2 .carta p,
-.colocarRutina3 .carta p{
+.colocarRutina3 .carta p,
+.colocarRutina4 .carta p{
     padding: 0 10px; /*espacio entre la letra y el borde de la tarjeta*/
     font-size: 16px;
     font-weight: 300;
 }
 
-.descripcion1 .carta1 a, 
+
 .colocarRutina1 .carta a,
 .colocarRutina2 .carta a,
-.colocarRutina3 .carta a{
+.colocarRutina3 .carta a,
+.colocarRutina4 .carta a{
     font-weight: 500;
     text-decoration: none;
     color: #3498db;
-    margin: 30px;
+    margin: 10px;
 }
 
-.descripcion1 .carta1 a:hover, 
+
 .colocarRutina1 .carta a:hover,
 .colocarRutina2 .carta a:hover,
-.colocarRutina3 .carta a:hover{
+.colocarRutina3 .carta a:hover,
+.colocarRutina4 .carta a:hover{
     color: rgb(230, 91, 10);
 }
 
@@ -179,7 +246,9 @@
 
 .colocarRutina1 .carta input,
 .colocarRutina2 .carta input,
-.colocarRutina3 .carta input{
+.colocarRutina3 .carta input,
+.colocarRutina3 .carta input,
+.colocarRutina4 .carta input{
     margin-bottom: 5px;
     width: 250px;
     height: 30px;
